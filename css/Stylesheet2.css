@@ -1,0 +1,88 @@
+/*#photo{
+    width: 300px;
+    border-style: double ;
+    border-color: black;
+    background-color:black;
+}
+/*#img1{
+    background-color: rgb(92, 173, 205);
+    /*width: 500px;
+    /*align-items: center;*/
+/*}
+/*#imgs{
+    align-items: center;
+    flex-direction: row;
+    display:flex;
+}
+#img2{
+    background-color: rgb(205, 92, 184);
+    width: 500px;
+    /*align-items: center;*/
+/*}
+#img3{
+    background-color: rgb(249, 237, 80);
+    width: 500px;
+    /*align-items: center;*/
+/*}
+#img4{
+    background-color: grey;
+    width: 500px;
+    /*align-items: center;*/
+/*}*/
+h1 { 
+    font-size:50 pt;
+    color:rgb(205, 177, 92); 
+    font-family: 'Oswald', sans-serif;   
+}
+h2 {
+    font-size:50 pt;
+    color:rgb(205, 177, 92); 
+    font-family: 'Oswald', sans-serif;  
+}
+body {
+    width:90%;margin:auto;
+    padding: 0;
+    display: flex;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    flex-direction:column;    
+    align-items:center;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+}
+#navigation {
+    width: 100%;
+} 
+#navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content : space-around ;
+}
+#navigation a {
+    text-decoration:none;
+    color:rgb(92, 173, 205);
+}
+#sousnavigation {
+    width:100%;
+    margin-bottom:5px;
+}
+#Intro {
+    color:rgb(92, 173, 205);
+    font-family: 'Roboto', sans-serif;
+}
+#surpied{
+    color:rgb(92, 173, 205);
+    width:100%;
+    margin-bottom:5px;
+}
+#pied{
+    color:rgb(92, 173, 205);
+}
+#Membres{
+    color: rgb(92, 173, 205);
+}
+#corps {
+    width:65%;
+    display:flex;
+    flex-direction:column;
+}

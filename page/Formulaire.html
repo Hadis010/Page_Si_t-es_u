@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="description" content="Association Si t'es U">
+        <meta name="author" content="Dini Hafsa">
+        <meta name="keywords" content="Si t'es U, L2 Info, Brest">
+        <meta charset="UTF-8">
+        <title>Si T'es U</title>
+        <script src="../script/function.js"></script>
+    </head>
+    <body>
+        <div id= "background">
+            <div id="entete">
+                <div="logo">
+                <img src="../img/logo.jpg" alt="Logo" width="300px" height="auto" />
+            </div>
+            <div id="Intro">
+                <p> Bienvenue à la page officielle de l'association Si t'es U .</p>
+            </div>
+            </div>
+                <div id="navigation">
+                    <ul>
+                        <li><a href="../index.html">Présentation</a></li>
+                        <li><a href="Evenements.html">Evénements</a></li>
+                        <li><a href ="Membres.html">Membres</a></li>
+                        <li><div id="Formulaire">Collaborations et d'autres</div></li>
+                    </ul>
+                </div>
+                <div id="sousnavigation"><hr/></div>
+                <div id="corps">
+                    <div id="Titre">
+                        <h1> Asociation : Si t'es u</h1>
+                    </div>
+                </div>
+                <h1 id="V" style="visibility: visible;"> remplir le formulaire </h1>
+       <form name="formulaire" id="myForm">
+            <fieldset>
+                <legend>vos informations</legend>
+                <table>
+                    <tr>
+                        <td><label for="n">Nom de famille </label></td>
+                        <td><input type="text" name="n1" id="n"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="p">Prénom</label></td>
+                        <td><input type="text" name="p1" id="p"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="D">Date de naissance</label></td>
+                        <td><input type="date" name="D1" id="D"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="h">homme</label> <input type="radio" id="h" name="sexe"></td>
+                        <td><label for="f">femme</label> <input type="radio" id="f" name="sexe"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Pseudo1">Pseudo</label></td>
+                        <td><input type="text" name="Pseudo" id="Pseudo1"></td>
+                    </tr>
+                    <tr>
+                        <td><labelfor="e">Email</label></td>
+                        <td><input type="email" name="email" id="ema"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ps">Mot de passe</label></td>
+                        <td><input type="password" name="passe1" id="ps"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ps2">Confirmation de mot de passe</label></td>
+                        <td><input type="password" name="passe2" id="ps2"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="ch"> Confirmer les données</label>
+                            <input type="checkbox" name="chek" id="ch" onclick="terminer(this.form)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" name="reset1" id="R1" value="Réinitialisation"></td>
+                        <span id="errornom"></span>
+                        <span id="errorprenom"></span>
+                        <span id="errordate"></span>
+                        <span id="errorpseudo"></span>
+                        <span id="errorsexe"></span>
+                        <span id="errormail"></span>
+                        <span id="errorpass"></span>
+                        <span id="errorpass2"></span>
+                        <td><input type="submit" name="sub" value="inscription" disabled></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button name="affi" onclick="afficher()">afficher vos données</button></td>
+                    </tr>
+                </table>  
+            </fieldset>
+        </form>
+        <script>
+            
+
+            myForm.addEventListener('submit',function(e) {
+                let nom =document.getElementById('n');
+                let myRegex= /^[a-zA-Z-\s]+$/;
+                
+                if(nom.value.trim() == ""){
+                    let myError = document.getElementById('errornom');
+                    myError.innerHTML = "Le champs nom est requis. <br>";
+                    myError.style.color = 'red';
+                    e.preventDefault();
+                } else if(myRegex.test(nom.value)== false) {
+                    let myError = document.getElementById('errornom');
+                    myError.innerHTML = "Le nom doit comporter des lettres, des tirets uniquement. <br>";
+                    myError.style.color = 'red';
+                    e.preventDefault();
+                    }
+                });
+
+             myForm.addEventListener('submit',function(e) {
+                    let prenom =document.getElementById('p');
+                    let myRegex= /^[a-zA-Z-\s]+$/;
+
+                if(prenom.value.trim() == ""){
+                    let myError = document.getElementById('errorprenom');
+                    myError.innerHTML = "Le champs prénom est requis. <br>";
+                    myError.style.color = 'red';
+                    e.preventDefault();
+                } else if(myRegex.test(prenom.value)== false) {
+                    let myError = document.getElementById('errorprenom');
+                    myError.innerHTML = "Le prénom doit comporter des lettres, des tirets uniquement. <br>";
+                    myError.style.color = 'red';
+                    e.preventDefault();
+                  }
+                });
+
+                myForm.addEventListener('submit',function(e) {
+                let date =document.getElementById('D');
+
+                if(date.value.trim() == ""){
+                    let myError = document.getElementById('errordate');
+                    myError.innerHTML = "entrer une date <br>";
+                    myError.style.color = 'red';
+                    e.preventDefault();
+                }
+            });
+
+
+              myForm.addEventListener('submit',function(e) {
+                let pseudo =document.getElementById('Pseudo1');
+                let myRegex= /^[a-zA-Z-\s]+$/;
+
+                if(pseudo.value.trim() == ""){
+                    let myError = document.getElementById('errorpseudo');
+                    myError.innerHTML = "Le champs pseudo est requis. <br>";
+                    myError.style.color = 'red';
+                    e.preventDefault();
+                } else if(myRegex.test(pseudo.value)== false) {
+                    let myError = document.getElementById('errorpseudo');
+                    myError.innerHTML = "Le pseudo doit comporter des lettres, des tirets uniquement. <br>";
+                    myError.style.color = 'red';
+                    e.preventDefault();
+                }
+                });
+
+                myForm.addEventListener('submit',function(e) {
+                    let email = document.getElementById('ema');
+                    
+                    if(email.value.trim() == ""){
+                    let myError = document.getElementById('errormail');
+                    myError.innerHTML = "Le champs email est requis. <br>";
+                    myError.style.color = 'red';
+                    e.preventDefault();
+                    }
+                });
+
+                myForm.addEventListener('submit',function(e) {
+                    let password = document.getElementById('ps');
+                    
+                    if(password.value.trim() == ""){
+                    let myError = document.getElementById('errorpass');
+                    myError.innerHTML = "Le champs mot de passe est requis. <br>";
+                    myError.style.color = 'red';
+                    e.preventDefault();
+                    }
+                });
+
+                myForm.addEventListener('submit',function(e) {
+                    let password2 = document.getElementById('ps2');
+                    
+                    if(password2.value.trim() == ""){
+                    let myError = document.getElementById('errorpass2');
+                    myError.innerHTML = "Le champs confirmation de mot de passe est requis. <br>";
+                    myError.style.color = 'red';
+                    e.preventDefault();
+                    }
+                });
+
+        </script>
+    </body>
+    </html>

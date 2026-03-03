@@ -1,0 +1,73 @@
+*{ background-color: white;
+
+}
+h1 { 
+    border-style: dotted;
+    text-align: center;
+    border-width: 0.5px;
+    font-size:50 pt;
+    color:rgb(205, 177, 92); 
+    font-family: 'Oswald', sans-serif;   
+}
+h2 {
+    font-size:50 pt;
+    color:rgb(205, 177, 92); 
+    font-family: 'Oswald', sans-serif;  
+}
+h2:hover {
+    color:rgb(205, 92, 184);
+    text-decoration: underline;
+}
+body {
+    width:1024px;
+    margin:auto;
+    height: 1024px;
+    padding: 0;
+    display: flex;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    flex-direction:column;    
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+}
+#navigation {
+    width: 100%;
+} 
+#navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content : space-around;
+}
+#navigation a {
+    text-decoration:none;
+    color:rgb(92, 173, 205);
+}
+#Formulaire{
+    color: rgb(92, 173, 205);
+}
+#sousnavigation {
+    width:100%;
+    margin-bottom:5px;
+}
+#Intro {
+    color:rgb(92, 173, 205);
+    padding:2%;
+    font-family: 'Roboto', sans-serif;
+}
+#corps {
+    display:flex;
+    flex-direction:column;
+}
+#Introduction {
+    text-align: center;
+    padding:2%;
+    color:rgb(92, 173, 205);
+}
+#surpied{
+    color:rgb(92, 173, 205);
+    width:100%;
+    margin-bottom:5px;
+}
+#pied{
+    color:rgb(92, 173, 205);
+}

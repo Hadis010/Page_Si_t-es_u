@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML avec javascript
+        </title>
+        <style>
+            th,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+    
+            table {
+                border-collapse: collapse;
+            }
+    
+            th,
+            td {
+                padding: 5px;
+            }
+        </style>
+        <script src="../script/scriptjava.js"></script>
+    </head>
+    <body>
+        <button type="button" onclick="loadXMLDoc()">users</button>
+    <button type="button" onclick="addUser()">Add</button>
+    <button type="button" onclick="saveUser()">Save</button>
+    <br><br>
+    <table id="data"></table>
+
+    <br>
+    <br>
+    <table id="tblUser" style="display: none;">
+        <tr>
+            <td>Nom</td>
+            <td><input type="text" size="50" id="n"></td>
+        </tr>
+        <tr>
+            <td>Prenom</td>
+            <td><input type="text" size="50" id="p"></td>
+        </tr>
+        <tr>
+            <td>Date de naissance</td>
+            <td><input type="text" size="50" id="D"></td>
+        </tr>
+        <tr>
+            <td>Sexe</td>
+            <td><input type="text" size="50" id="s"></td>
+        </tr>
+        <tr>
+            <td>Pseudo</td>
+            <td><input type="text" size="50" id="Pseudo1"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" size="50" id="ema"></td>
+        </tr>
+        <tr>
+            <td>Mot de passe</td>
+            <td><input type="text" size="50" id="ps"></td>
+        </tr>
+        <tr>
+            <td><input type="hidden" id="hId"></td>
+            <td>
+                <button type="button" onclick="updateUser()" id="btnUpdate">Update</button>
+                <button type="button" onclick="submitUser()" id="btnAdd">Submit</button>                
+            </td>
+        </tr>
+    </table>
+    </body>
+</html>

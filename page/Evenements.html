@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/Stylesheet1.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="description" content="Association Si t'es U">
+        <meta name="author" content="Dini Hafsa">
+        <meta name="keywords" content="Si t'es U, L2 Info, Brest">
+        <meta charset="UTF-8">
+        <title>Si T'es U</title>
+    </head>
+    
+    <script src ="../script/script2.js"> </script>
+
+    <body onload="displaySlide(),diapotimer()">
+        <div id= "background">
+            <div id="entete">
+                <div="logo">
+                <img src="../img/logo.jpg" alt="Logo" width="300px" height="auto" />
+            </div>
+            <div id="Intro">
+                <p> Bienvenue à la page officielle de l'association Si t'es U .</p>
+            </div>
+            </div>
+                <div id="navigation">
+                    <ul>
+                        <li><a href="../index.html">Présentation</a></li>
+                        <li><div id="Evenements">Evénements</div></li>
+                        <li><a href ="Membres.html">Membres</a></li>
+                        <li><a href="Formulaire.html">Collaborations et d'autres</a></li>
+                    </ul>
+                </div>
+                <div id="sousnavigation"><hr/></div>
+                <div id="corps">
+                    <div id="Titre">
+                        <h1> Evénements </h1>
+                    </div>
+                </div>
+                <div id="Contenu">
+                    <p>
+                        L'<em>association</em> a organisé plusieurs <strong>événements</strong> dans ses cités brestoises. 
+
+                    </p>
+                    <h2> Diaporama des événements:</h2>    
+                    <div id ="Display">
+                        <div class="slides">
+                            <img src="../img/event1.jpg" alt="événement1" style="width:100%">
+                        </div>
+                
+                        <div class="slides">
+                            <img src="../img/event2.jpg" alt="événement2" style="width:100%">
+                        </div>
+                
+                        <div class="slides">
+                            <img src="../img/event3.jpg" alt="événement3" style="width:100%">
+                        </div>
+
+                        <div class="slides">
+                            <img src="../img/event4.jpg" alt="événement4" style="width:100%">
+                        </div>
+
+                        <div id="control">
+                            <button type="button" onclick="previousSlide(-1)">Previous</button>
+                            <button type="button" onclick="showImage(0)">Image 1</button>
+                            <button type="button" onclick="showImage(1)">Image 2</button>
+                            <button type="button" onclick="showImage(2)">Image 3</button>
+                            <button type="button" onclick="showImage(3)">Image 4</button>
+                            <button type="button" onclick="nextSlide(1)">Next</button>
+                        </div>
+                        <hr style ="color : black; width: 100%;">
+                        <div id= "controlV2">
+                            <img src="../img/previous.svg" alt="prev" style= "width:50px" class="navbutton" onclick="nextSlide(-1)">
+                            <img src="../img/event1.jpg" class="thumbnails" alt="événement1" style= "width:50px" onclick="showImage(0)">
+                            <img src="../img/event2.jpg" class="thumbnails" alt="événement2" style= "width:50px"onclick="showImage(0)">
+                            <img src="../img/event3.jpg" class="thumbnails" alt="événement3" style= "width:50px"onclick="showImage(0)">
+                            <img src="../img/event4.jpg" class="thumbnails" alt="événement4" style= "width:50px"onclick="showImage(0)">
+                            <img src="../img/next.svg" alt="next" style= "width:50px" class="navbutton" onclick="nextSlide(1)">
+                        </div>
+                    </div>
+                        <hr style ="color : black; width: 100%;">
+                </div>
+            <div id="surpied"><hr /></div>
+            <div id="pied">
+                <p>Merci d'avoir consulté ma page.</p>
+            </div>
+        </div>
+    </body>
+</html>

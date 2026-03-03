@@ -1,0 +1,105 @@
+h1 { 
+    font-size:50 pt;
+    color:rgb(205, 177, 92); 
+    font-family: 'Oswald', sans-serif;   
+}
+h2 {
+    font-size:50 pt;
+    color:rgb(205, 177, 92); 
+    font-family: 'Oswald', sans-serif;  
+}
+h2:hover {
+    color:rgb(205, 92, 184);
+    text-decoration: underline;
+}
+body {
+    width:90%;margin:auto;min-width:600px;max-width:2000px;
+    padding: 0;
+    display: flex;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    flex-direction:column;    
+    align-items:center;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+}
+span { 
+    font-weight: bold;
+    color: orange; 
+}
+#navigation {
+    width: 100%;
+} 
+#navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content : space-around;
+}
+#navigation a {
+    text-decoration:none;
+    color:rgb(92, 173, 205);
+}
+#Présentation{
+    color: rgb(92, 173, 205);
+}
+#sousnavigation {
+    width:100%;
+    margin-bottom:5px;
+}
+#Intro {
+    color:rgb(92, 173, 205);
+    font-family: 'Roboto', sans-serif;
+}
+#corps {
+    width:65%;
+    display:flex;
+    flex-direction:column;
+}
+#quote{
+    color: rgb(92, 173, 205);
+}
+#Introduction {
+    text-align:center;
+    padding:2%;
+    color:rgb(92, 173, 205);
+}
+#Tableau{
+  border-collapse: collapse;
+  width: 500px;
+  margin-left: 30%;
+  position:relative;
+  padding: 35px;
+  text-align: center;
+  opacity: 0.8;
+}
+#Tableau{
+    color:rgb(92, 173, 205);
+}
+#tr, td{
+  border: 1px solid rgb(92, 173, 205);
+  padding: 10px;
+  vertical-align: top;
+  color:rgb(92, 173, 205);
+}
+#surpied{
+    color:rgb(92, 173, 205);
+    width:100%;
+    margin-bottom:5px;
+}
+#pied{
+    color:rgb(92, 173, 205);
+}
+#PDF{
+    color:black;
+    width:33%;
+    margin:auto;
+    box-sizing:border-box;
+    box-shadow : 4px 4px 0px #C0C0C0;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+    text-align:center;
+    border-style:dotted;
+    border-width:2px;
+    background-color:lightskyblue;
+}
